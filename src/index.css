@@ -39,6 +39,7 @@ body {
   color: var(--white);
   /* padding: 2em; */
   height: 100vh ;
+  margin: 0;
 }
 
 a {
@@ -99,6 +100,31 @@ img {
   border-style: inset;
   /* border-width: medium; */
 }
+
+.homepage {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  padding: 2em;
+}
+
+.links {
+  display: flex;
+  width: 83%;
+  text-align: center;
+}
+
 /* button {
   border-radius: 8px;
   border: 1px solid transparent;

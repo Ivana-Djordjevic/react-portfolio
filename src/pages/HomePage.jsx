@@ -1,12 +1,12 @@
-import avatar from '../pages/images/avatar.jpeg'
+import avatar from '../assets/images/avatar.jpeg'
 
 export default function HomePage() {
     return (
-        <div>
+        <div className='homepage'>
             <h2>Welcome!</h2>
             <img src={avatar} alt="avatar" />
             <div>
-                Text about me
+                <p>Text about me</p>
             </div>
         </div>
     );
