@@ -6,14 +6,16 @@ export default function Projects() {
     return (
         <div className='projects'> 
                 {projects.map((project) => (
-                    <section className="project-card" key={project.id}>
-                        <h3 className="title">
-                            {project.title}
-                        </h3>
-                        <img scr={project.image} alt={project.alt}></img>
-                        <div className="links">
-                            <a href={project.githubLink} >Github Repo</a>
-                            <a href={project.deployedLink} >Deployed Link</a>
+                    <section className="project-card border-style border-radius background-size relative-position" 
+                             key={project.id} data-id={project.id}>
+                        <div className='overlay'>
+                             <h3 className="title">
+                                {project.title}
+                            </h3>
+                            <div className="links">
+                                <a href={project.githubLink} >Github Repo</a>
+                                <a href={project.deployedLink} >Deployed Link</a>
+                            </div>
                         </div>
                     </section>
                 ))}
