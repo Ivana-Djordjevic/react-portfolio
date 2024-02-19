@@ -1,11 +1,13 @@
-import avatar from './images/avatar.jpg'
-// const avatar = require('./images/avatar.jpeg')
+import avatar from '../pages/images/avatar.jpeg'
 
 export default function HomePage() {
     return (
         <div>
-            <h2>i am the HomePage !</h2>
-            <image scr={avatar} alt="charcoal illiustration"></image>
+            <h2>Welcome!</h2>
+            <img src={avatar} alt="avatar" />
+            <div>
+                Text about me
+            </div>
         </div>
     );
 }

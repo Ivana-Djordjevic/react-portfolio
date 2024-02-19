@@ -1,11 +1,13 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+:root, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Spectral', Arial, Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,23 +16,48 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* color variables */
+
+:root {
+  --lightOrange: hsl(32, 79%, 71%);
+  --lightOpacityOrange: hsla(25, 70%, 82%, 0.477);
+  --lightPurple: hsla(290, 79%, 47%, 0.435);
+  --blue: hsla(250, 61%, 50%, 0.8);
+  --lightOpacityBlue: hsla(250, 61%, 50%, 0.326);
+  --white: white;
+}
+
+/* color application*/
+#root {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background: linear-gradient(var(--lightOrange), var(--lightPurple), var(--blue));
+  color: var(--white);
+  /* padding: 2em; */
+  height: 100vh ;
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
+  color: var(--blue);
   text-decoration: inherit;
 }
 
 a:hover {
-  color: #1f5f55;
+  color: var(--white);
 }
 
-body {
-  margin: 0;
+/* body { */
+  /* margin: 0; */
   /* display: flex; */
   /* place-items: center; */
   /* min-width: 320px; */
   /* min-height: 100vh; */
-}
+/* } */
 
 /* h1 {
   font-size: 3.2em;
@@ -40,17 +67,38 @@ body {
 header {
   display: flex;
   margin: 0;
-  justify-content: space-around;}
+  justify-content: space-around;
+  border-style: outset;
+  border-radius: 10px;
+  background: var(--lightOpacityOrange);
+}
 
 .navigation { 
   display: flex;
+  margin-top: 2.5rem;
+  justify-content: space-around;
+  width: 80%;
 }
 
 footer {
   position: absolute;  /* or fixed */
   bottom: 0;
+  background-color: var(--lightOpacityBlue);
+  border-radius: 10px;
+  width: 100vw;
+  border-style: inset;
+  display: flex;
+  justify-content: center;
 }
 
+img {
+  /* aspect-ratio: auto; */
+  width: 20%;
+  border-radius: 10px;
+  margin: auto;
+  border-style: inset;
+  /* border-width: medium; */
+}
 /* button {
   border-radius: 8px;
   border: 1px solid transparent;
