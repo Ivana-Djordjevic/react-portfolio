@@ -9,11 +9,11 @@ export const projects = [
     },
     {
         id: 2, 
-        title: 'Task Management',
-        image: '/images/project-2.png',
+        title: 'Quiz Game Time',
+        image: '/images/project-6.png',
         alt: 'screenshot of an application',
-        githubLink: 'https://github.com/Ivana-Djordjevic/task-management',
-        deployedLink: 'https://task-managementt-6e5cfd5db620.herokuapp.com/login'
+        githubLink: 'https://github.com/Ivana-Djordjevic/quiz-game-time',
+        deployedLink: 'https://ivana-djordjevic.github.io/quiz-game-time/'
     },
     {
         id: 3, 
@@ -41,10 +41,10 @@ export const projects = [
     },
     {
         id: 6, 
-        title: 'Quiz Game Time',
-        image: '/images/project-6.png',
+        title: 'Task Management',
+        image: '/images/project-2.png',
         alt: 'screenshot of an application',
-        githubLink: 'https://github.com/Ivana-Djordjevic/quiz-game-time',
-        deployedLink: 'https://ivana-djordjevic.github.io/quiz-game-time/'
+        githubLink: 'https://github.com/Ivana-Djordjevic/task-management',
+        deployedLink: 'https://task-managementt-6e5cfd5db620.herokuapp.com/login'
     },
 ];

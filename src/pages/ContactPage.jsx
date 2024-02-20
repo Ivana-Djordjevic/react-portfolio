@@ -52,34 +52,36 @@ export default function ContactPage() {
     };
 
     return (
-        <form onSubmit={handleFormSubmit} className='justify-content-center '>
-            <label>Name:</label>
-            <input type="text" 
-                   value={name} 
-                   placeholder='name'
-                   onChange={handleNameChange} 
-                   onBlur={handleNameBlur} />
-            {nameError && 
-            <div className='error'>{nameError}</div>}
-    
-            <label>Email:</label>
-            <input type="email" 
-                   value={email} 
-                   placeholder='email'
-                   onChange={handleEmailChange} 
-                   onBlur={handleEmailBlur} />
-            {emailError && 
-            <div className='error'>{emailError}</div>}
+        <div className='display-flex justify-content-center'>
+            <form onSubmit={handleFormSubmit} className='padding border-style text-shadow'>
+                <label>Name:</label>
+                <input type="text" 
+                    value={name} 
+                    placeholder='name'
+                    onChange={handleNameChange} 
+                    onBlur={handleNameBlur} />
+                {nameError && 
+                <div className='error'>{nameError}</div>}
+        
+                <label>Email:</label>
+                <input type="email" 
+                    value={email} 
+                    placeholder='email'
+                    onChange={handleEmailChange} 
+                    onBlur={handleEmailBlur} />
+                {emailError && 
+                <div className='error'>{emailError}</div>}
 
-            <label>Message:</label>
-            <textarea type='text' 
-                      value={message} 
-                      placeholder='enter message here <3'
-                      onChange={handleMessageChange}
-                      onBlur={handleMessageBlur} />
-            {messageError && 
-                <div className='error'>{messageError}</div>}
-            <button> Submit</button>
-      </form>
+                <label>Message:</label>
+                <textarea type='text' 
+                        value={message} 
+                        placeholder='enter message here <3'
+                        onChange={handleMessageChange}
+                        onBlur={handleMessageBlur} />
+                {messageError && 
+                    <div className='error'>{messageError}</div>}
+                <button> Submit</button>
+            </form>
+        </div>
     );
 }

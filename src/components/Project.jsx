@@ -4,18 +4,18 @@ import { projects } from '../assets/data';
 
 export default function Projects() {
     return (
-        <div className='projects justify-content-center'> 
+        <div className='projects padding justify-content-center'> 
                 {projects.map((project) => (
-                    <section className="project-card border-style border-radius background-size relative-position justify-content-center" 
-                             key={project.id} data-id={project.id}>
-                        <div className='overlay justify-content-center'>
-                             <h3 className="title">
-                                {project.title}
-                            </h3>
-                            <div className="links">
-                                <a href={project.githubLink} target="_blank">Github Repo</a>
-                                <a href={project.deployedLink} target="_blank">Deployed Link</a>
-                            </div>
+                    <section className='project-card display-flex border-style ' key={project.id} data-id={project.id}> 
+                        <div>
+                            <h3 className='title text-shadow'>{project.title}</h3>
+                        </div>
+                        <div className='image-container border-radius'>
+                            <img src={project.image} alt={project.alt} ></img>
+                        </div>
+                        <div className="links display-flex text-shadow">
+                            <a href={project.githubLink} target="_blank">Github Repo</a>
+                            <a href={project.deployedLink} target="_blank">Deployed Link</a>
                         </div>
                     </section>
                 ))}

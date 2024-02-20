@@ -3,7 +3,7 @@ import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-
 
 export default function Header() {
     return (
-        <footer className="border-style">
+        <footer className="display-flex border-style">
             <a href='https://github.com/Ivana-Djordjevic' 
                target="_blank">
                 <FontAwesomeIcon className="icon" icon={faGithub} />

@@ -1,12 +1,12 @@
 export default function ResumePage() {
     return (
         <div>
-            <div className="download">
+            <div className="download padding">
                 <a href="/documents/resume.pdf" 
                    download
                    className="visited">Click here to download my resume</a>
             </div>
-            <section className="skills justify-content-center">
+            <section className="skills display-flex justify-content-center text-shadow">
                 <div className="list border-style">
                     <h2 className=""> Front-end Proficiencies</h2>
                     <ul>
