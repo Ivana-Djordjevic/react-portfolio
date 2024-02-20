@@ -3,7 +3,8 @@ export default function ResumePage() {
         <div>
             <div className="download">
                 <a href="/documents/resume.pdf" 
-                   download>Click here to download my resume</a>
+                   download
+                   className="visited">Click here to download my resume</a>
             </div>
             <section className="skills justify-content-center">
                 <div className="list border-style">

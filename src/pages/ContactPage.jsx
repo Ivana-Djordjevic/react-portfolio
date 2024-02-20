@@ -23,7 +23,7 @@ export default function ContactPage() {
 
     const handleNameBlur = () => {
         if (!name) {
-          setNameError('Name is required');
+          setNameError('* name is required');
         } else {
           setNameError('');
         }
@@ -31,9 +31,9 @@ export default function ContactPage() {
 
     const handleEmailBlur = () => {
         if (!email) {
-          setEmailError('Email is required');
+          setEmailError('* email is required');
         } else if (!/^([a-zA-Z0-9._-]+)@([a-zA-Z0-9.-]+)\.([a-zA-Z]{2,6})$/.test(email)) {
-          setEmailError('Invalid email format');
+          setEmailError('* invalid email format');
         } else {
           setEmailError('');
         }
@@ -41,14 +41,18 @@ export default function ContactPage() {
 
     const handleMessageBlur = () => {
         if (!name) {
-          setMessageError('Message is required');
+          setMessageError('* message is required');
         } else {
           setMessageError('');
         }
     };
 
+    const handleFormSubmit = (e) => {
+        e.preventDefault() 
+    };
+
     return (
-        <form className='justify-content-center '>
+        <form onSubmit={handleFormSubmit} className='justify-content-center '>
             <label>Name:</label>
             <input type="text" 
                    value={name} 
