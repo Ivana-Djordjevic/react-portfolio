@@ -73,7 +73,6 @@ header {
   justify-content: space-around;
   border-style: outset;
   border-radius: 10px;
-  box-shadow: 0 0 15px 4px var(--blue);
   background: var(--lightOpacityOrange);
 }
 
@@ -88,7 +87,6 @@ footer {
   position: absolute;  /* or fixed */
   bottom: 0;
   background-color: var(--lightOpacityBlue);
-  box-shadow: 0 0 15px 4px var(--blue);
   border-radius: 10px;
   width: 100vw;
   border-style: inset;
@@ -266,6 +264,22 @@ button {
 .error {
   color: var(--red);
   font-size: smaller;
+}
+
+.download {
+  padding: 2em;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list {
+  padding:  1em 2em ;
+  margin: 2em;
 }
 
 /* button {

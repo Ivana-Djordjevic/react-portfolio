@@ -48,7 +48,7 @@ export default function ContactPage() {
     };
 
     return (
-        <form className='justify-content-center'>
+        <form className='justify-content-center '>
             <label>Name:</label>
             <input type="text" 
                    value={name} 

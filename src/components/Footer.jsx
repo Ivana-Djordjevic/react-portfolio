@@ -2,7 +2,7 @@
 
 export default function Header() {
     return (
-        <footer className="justify-content-center">
+        <footer className="justify-content-center border-style">
             <h6>Hi i am the footer </h6> 
         </footer>
 
