@@ -91,6 +91,20 @@ footer {
   width: 100vw;
   border-style: inset;
   display: flex;
+  padding: 1em;
+  justify-content: space-evenly;
+}
+
+footer a {
+  color: var(--white);
+}
+
+footer a:hover {
+  color: var(--lightOrange);
+}
+
+.icon {
+  font-size: 2em;
 }
 
 img {
@@ -281,6 +295,8 @@ button {
   padding:  1em 2em ;
   margin: 2em;
 }
+
+
 
 /* button {
   border-radius: 8px;
