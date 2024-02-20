@@ -14,6 +14,7 @@
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%; */
+  box-sizing: border-box;
 }
 
 /* color variables */
@@ -25,6 +26,7 @@
   --blue: hsla(250, 61%, 50%, 0.8);
   --lightOpacityBlue: hsla(250, 61%, 50%, 0.326);
   --white: white;
+  --red: rgb(216, 8, 8);
 }
 
 #root {
@@ -71,6 +73,7 @@ header {
   justify-content: space-around;
   border-style: outset;
   border-radius: 10px;
+  box-shadow: 0 0 15px 4px var(--blue);
   background: var(--lightOpacityOrange);
 }
 
@@ -85,11 +88,11 @@ footer {
   position: absolute;  /* or fixed */
   bottom: 0;
   background-color: var(--lightOpacityBlue);
+  box-shadow: 0 0 15px 4px var(--blue);
   border-radius: 10px;
   width: 100vw;
   border-style: inset;
   display: flex;
-  justify-content: center;
 }
 
 img {
@@ -99,6 +102,8 @@ img {
 
 .border-style {
   border-style: inset;
+  box-shadow: 0 0 15px 4px var(--blue);
+
 }
 
 .border-radius {
@@ -113,18 +118,25 @@ img {
   position: relative;
 }
 
+.justify-content-center {
+  justify-content: center;
+}
+
 .homepage {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
+}
+
+.bio {
+  line-height: 2;
+  padding: 2em;
 }
 
 .projects {
   display: grid;
   flex-wrap: wrap;
-  justify-content: center;
   grid-template-columns: repeat(6, 1fr);
   gap: 30px;
   grid-auto-rows: minmax(10em, auto);
@@ -133,7 +145,6 @@ img {
 
 .project-card {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -184,7 +195,6 @@ img {
   color: var(--white);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease; /* Smooth transition for opacity */
 }
@@ -211,6 +221,51 @@ img {
   flex-direction: column;
   width: 83%;
   text-align: center;
+}
+
+form {
+  display: inline-flex;
+  flex-direction: column;
+  border: solid;
+  padding: 2em;
+  margin: 2em;
+  box-shadow: 0 0 15px 4px var(--blue);
+}
+
+textarea {
+  height: 150px;
+  width: 200px;
+}
+
+input, textarea {
+  padding: 10px;
+  margin:10px 0;
+  box-shadow: 0 0 15px 4px var(--blue);
+  border-radius: 5px;
+}
+
+textarea {
+  background-color: var(--white);
+}
+
+button {
+  /* remove default behavior */
+  appearance:none;
+  -webkit-appearance:none;
+
+  /* usual styles */
+  padding:10px;
+  border:none;
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight:600;
+  border-radius:5px;
+  width:100%;
+}
+
+.error {
+  color: var(--red);
+  font-size: smaller;
 }
 
 /* button {
