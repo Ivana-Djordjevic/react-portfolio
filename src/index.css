@@ -97,15 +97,21 @@ img {
 header {
   margin: 0;
   justify-content: space-around;
-  border-style: outset;
-  border-radius: 10px;
   background: var(--lightOpacityOrange);
 }
 
 .navigation { 
-  margin-top: 2.5rem;
+  margin-top: 0.4rem;
   justify-content: space-around;
   width: 80%;
+}
+
+.active {
+  border-radius: 10px;  
+  border: 1px solid var(--blue);
+  background-color: var(--lightOrange);
+  padding: 0.3em;
+
 }
 
 /* Footer Style  */
@@ -305,6 +311,13 @@ button {
 /* responsive design: mobile */
 
 @media screen and (max-width: 457px) {
+
+  /* Header Adjustments */
+  
+  .navigation {
+    align-items: center;
+    padding: 0em;
+  }
 
   /* Homepage Adjustments */
 

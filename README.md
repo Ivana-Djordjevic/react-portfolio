@@ -15,14 +15,6 @@ SO THAT I can assess whether they're a good candidate for an open position
 ## Acceptance Criteria
 
 ```md
-WHEN I view the navigation titles
-THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
-WHEN I click on a navigation title
-THEN the browser URL changes and I am presented with the corresponding section below the navigation and that title is highlighted
-
-WHEN I am presented with the Portfolio section
-THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories
-
 WHEN I am presented with the Contact section
 THEN I see a contact form with fields for a name, an email address, and a message
 WHEN I move my cursor out of one of the form fields without entering text
@@ -36,38 +28,6 @@ THEN I receive a notification if I have entered an invalid email address
 * A single `Project` component that will be used multiple times in the Portfolio section
 
 **Note**: Because this application doesn’t include a back end or connect to an API, the contact form doesn't need to save this information right now. You'll add back-end functionality in the next few weeks. In the meantime, consider including your email address and phone number on the Contact page.
-
-### Projects
-
-For each project that is featured in your portfolio, include the following:
-
-* An image of the deployed application (either a short animated GIF or screenshot)
-
-* The title of the project
-
-* A link to the deployed application
-
-* A link to the corresponding GitHub repository
-
-### Design
-
-As with the previous portfolio Challenge, remember that "good" design is subjective; however, your site should look polished. Here are a few guidelines on what that means:
-
-* Use mobile-first design.
-
-* Consider using animations and React component libraries. Note that this will not affect your grade, but it might impact how potential employers gauge your knowledge.
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
 
 This Challenge is graded based on the following criteria:
 
