@@ -29,7 +29,7 @@ export default function ContactPage() {
         } else {
           setNameError('');
         }
-      };
+    };
 
     const handleEmailBlur = () => {
         if (!email) {
@@ -39,7 +39,7 @@ export default function ContactPage() {
         } else {
           setEmailError('');
         }
-      };
+    };
 
     const handleMessageBlur = () => {
         if (!name) {

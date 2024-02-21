@@ -1,8 +1,16 @@
 # React Portfolio
 
-## Your Task
+![License](https://img.shields.io/badge/License-MIT_License-lightblue.svg)
 
-You’ll deploy this application to Netlify. Follow the instructions in the Git Guide or consult the [Docs on Netlify](https://vitejs.dev/guide/static-deploy.html#netlify) to create a build that you can deploy.
+## Table of Contents
+
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Credit](#credit)
+
+## Description
 
 ## User Story
 
@@ -14,60 +22,71 @@ SO THAT I can assess whether they're a good candidate for an open position
 
 ## Acceptance Criteria
 
+```md
+GIVEN a single-page application portfolio for a web developer
+WHEN I load the portfolio
+THEN I am presented with a page containing a header, a section for content, and a footer
+WHEN I view the header
+THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
+WHEN I view the navigation titles
+THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
+WHEN I click on a navigation title
+THEN the browser URL changes and I am presented with the corresponding section below the navigation and that title is highlighted
+WHEN I load the portfolio the first time
+THEN the About Me title and section are selected by default
+WHEN I am presented with the About Me section
+THEN I see a recent photo or avatar of the developer and a short bio about them
+WHEN I am presented with the Portfolio section
+THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories
+WHEN I am presented with the Contact section
+THEN I see a contact form with fields for a name, an email address, and a message
+WHEN I move my cursor out of one of the form fields without entering text
+THEN I receive a notification that this field is required
+WHEN I enter text into the email address field
+THEN I receive a notification if I have entered an invalid email address
+WHEN I am presented with the Resume section
+THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
+WHEN I view the footer
+THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
+```
 
+screenshots:
 
-## Getting Started
+homepage:
 
-**Note**: Because this application doesn’t include a back end or connect to an API, the contact form doesn't need to save this information right now. You'll add back-end functionality in the next few weeks. In the meantime, consider including your email address and phone number on the Contact page.
+portfolio page:
 
-This Challenge is graded based on the following criteria:
+contact page:
 
-### Technical Acceptance Criteria: 40%
+resume page:
 
-* Satisfies all of the preceding acceptance criteria plus the following:
+[deployed netlify link](https://main--cozy-empanada-da79f3.netlify.app/)
 
-  * Application has a single `Project` component that’s used multiple times in the Portfolio section.
+## Installation
 
-  * Application must be deployed to Netlify.
+- react
+- react-dom
+- react-router-dom
+- @fortawesome/fontawesome-svg-core
+- @fortawesome/free-brands-svg-icons
+- @fortawesome/react-fontawesome
+- vite
+- @types/react
+- @types/react-dom
+- @vitejs/plugin-react
 
-### Deployment: 32%
+## Usage
 
-* Application deployed at live URL.
+A portfolio that showcases my abilities in React.
 
-* Application loads with no errors.
+## License
 
-* Application GitHub URL submitted.
+This application is covered under: MIT License. 
 
-* GitHub repository contains application code.
+## Credit
 
-### Application Quality: 15%
-
-* User experience is intuitive and easy to navigate.
-
-* User interface style is clean and polished.
-
-* Application uses a color scheme other than the default Bootstrap color palette.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains high-quality README file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README that describes the project.
-
----
-
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+*[UCD readme file](https://git.bootcampcontent.com/University-of-California---Davis/UCD-VIRT-FSF-PT-09-2023-U-LOLC/-/blob/main/20-React/02-Challenge/README.md)
+- [guideline](https://www.freecodecamp.org/news/build-portfolio-website-react/)
+- [particles background](https://getisotope.com/background-pack-library)
+- [form styling](https://blog.logrocket.com/how-to-style-forms-with-css-a-beginners-guide/)
+- [convert video to gif](https://ezgif.com/video-to-gif)

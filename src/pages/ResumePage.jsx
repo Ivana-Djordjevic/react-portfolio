@@ -5,8 +5,8 @@ export default function ResumePage() {
         <div>
             <div className="download padding">
                 <a href="/documents/resume.pdf" 
-                   download
-                   className="visited">Click here to download my resume</a>
+                   download> 
+                   Click here to download my resume</a>
             </div>
             <section className="skills display-flex justify-content-center text-shadow">
                 <div className="list border-style">
