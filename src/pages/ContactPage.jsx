@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { useState } from 'react';
 
 export default function ContactPage() {
@@ -52,34 +54,34 @@ export default function ContactPage() {
     };
 
     return (
-        <div className='display-flex justify-content-center'>
-            <form onSubmit={handleFormSubmit} className='padding border-style text-shadow'>
+        <div className="display-flex justify-content-center">
+            <form onSubmit={handleFormSubmit} className="padding border-style text-shadow">
                 <label>Name:</label>
                 <input type="text" 
                     value={name} 
-                    placeholder='name'
+                    placeholder="name"
                     onChange={handleNameChange} 
                     onBlur={handleNameBlur} />
                 {nameError && 
-                <div className='error'>{nameError}</div>}
+                <div className="error">{nameError}</div>}
         
                 <label>Email:</label>
                 <input type="email" 
                     value={email} 
-                    placeholder='email'
+                    placeholder="email"
                     onChange={handleEmailChange} 
                     onBlur={handleEmailBlur} />
                 {emailError && 
-                <div className='error'>{emailError}</div>}
+                <div className="error">{emailError}</div>}
 
                 <label>Message:</label>
-                <textarea type='text' 
+                <textarea type="text" 
                         value={message} 
-                        placeholder='enter message here <3'
+                        placeholder="enter message here <3"
                         onChange={handleMessageChange}
                         onBlur={handleMessageBlur} />
                 {messageError && 
-                    <div className='error'>{messageError}</div>}
+                    <div className="error">{messageError}</div>}
                 <button> Submit</button>
             </form>
         </div>

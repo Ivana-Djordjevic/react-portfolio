@@ -1,7 +1,14 @@
+import React from 'react';
+
 import Project from '../components/Project';
+import { projects } from '../assets/data';
 
 export default function PortfolioPage() {
     return (
-        < Project />
+        <div className="projects padding justify-content-center"> 
+            {projects.map((project) => (
+                < Project project={project} key={project.id}/>
+            ))}
+        </div>
     );
 }

@@ -26,8 +26,8 @@
 
 #root {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 body {
@@ -39,6 +39,10 @@ body {
 }
 
 /* universal styles */
+
+.spacer {
+  height: 70px;
+}
 
 a {
   font-weight: 500;
@@ -117,7 +121,7 @@ header {
 /* Footer Style  */
 
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   background-color: var(--lightOpacityBlue);
   border-radius: 10px;
@@ -225,7 +229,7 @@ footer a:visited {
   text-decoration: inherit;
 }
 
-.link a:visited {
+.links a:visited {
   color: var(--lightOrange);
 }
 
@@ -313,7 +317,7 @@ button {
 @media screen and (max-width: 457px) {
 
   /* Header Adjustments */
-  
+
   .navigation {
     align-items: center;
     padding: 0em;
