@@ -11,16 +11,19 @@ export default function ContactPage() {
     const [emailError, setEmailError] = useState('');
     const [messageError, setMessageError] = useState('');
 
-    const handleNameChange = (e) => {
-        setName(e.target.value);
-    };
+    const handleInputChange = (e) => {
 
-    const handleEmailChange = (e) => {
-        setEmail(e.target.value);
-    };
+      const { target } = e;
+      const inputType = target.name;
+      const inputValue = target.value;
 
-    const handleMessageChange = (e) => {
-        setMessage(e.target.value);
+      if (inputType === 'name') {
+        setName(inputValue);
+      } else if (inputType === 'email') {
+        setEmail(inputValue);
+      } else if ( inputType === 'message') {
+        setMessage(inputValue);
+      }
     };
 
     const handleNameBlur = () => {
@@ -58,27 +61,30 @@ export default function ContactPage() {
             <form onSubmit={handleFormSubmit} className="padding border-style text-shadow">
                 <label>Name:</label>
                 <input type="text" 
+                    name="name"
                     value={name} 
                     placeholder="name"
-                    onChange={handleNameChange} 
+                    onChange={handleInputChange} 
                     onBlur={handleNameBlur} />
                 {nameError && 
                 <div className="error">{nameError}</div>}
         
                 <label>Email:</label>
                 <input type="email" 
+                    name="email"
                     value={email} 
                     placeholder="email"
-                    onChange={handleEmailChange} 
+                    onChange={handleInputChange} 
                     onBlur={handleEmailBlur} />
                 {emailError && 
                 <div className="error">{emailError}</div>}
 
                 <label>Message:</label>
                 <textarea type="text" 
+                        name="message"
                         value={message} 
                         placeholder="enter message here <3"
-                        onChange={handleMessageChange}
+                        onChange={handleInputChange}
                         onBlur={handleMessageBlur} />
                 {messageError && 
                     <div className="error">{messageError}</div>}
