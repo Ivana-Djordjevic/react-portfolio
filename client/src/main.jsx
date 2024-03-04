@@ -6,7 +6,7 @@ import './index.css';
 import background from './assets/background.js';
 
 import App from './App.jsx';
-import HomePage from './pages/HomePage.jsx';
+import HomePage from './pages/HomePage.jsx'
 import ErrorPage from './pages/ErrorPage.jsx';
 import PortfolioPage from './pages/PortfolioPage.jsx';
 import ContactPage from './pages/ContactPage.jsx';

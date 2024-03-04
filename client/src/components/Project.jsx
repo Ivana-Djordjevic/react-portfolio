@@ -14,6 +14,5 @@ export default function Projects({project}) {
                 <a href={project.deployedLink} target="_blank" rel="noreferrer">{project.deployedLink ? 'Deployed Link' : 'Back End Only'}</a>
             </div>
         </section>
-
     );
 }
