@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { useState } from 'react';
+import anime from 'animejs';
 
 export default function ContactPage() {
 
@@ -73,6 +74,32 @@ export default function ContactPage() {
         }
     };
 
+
+	function modal(message) {
+
+		const modalElement = document.querySelector('.anime-modal');
+		modalElement.textContent = message;
+
+		const tl = anime.timeline({
+			easing: 'easeOutExpo',
+			duration: 1000,
+			
+		});
+		  
+		  // Add children
+		tl
+			.add({
+				targets: '.anime-modal',
+				translateY: 350,
+				// innerHTML: ` ${message}`
+			})
+			.add({
+				targets: '.anime-modal',
+				translateY: 0,
+				delay: 1000
+			})
+	}
+
     const handleFormSubmit = async (e) => {
         e.preventDefault() 
 
@@ -84,13 +111,13 @@ export default function ContactPage() {
 				},
 				body: JSON.stringify(formData)
 			  });
-			  if (response.ok) {
-				alert('Email sent successfully');
+			if (response.ok) {
+				modal('email sent');
 				setFormData({ name: '', email: '', message: '' });
-			  } else {
-				alert('Failed to send email');
+			} else {
+				modal('Failed to send email');
 				console.log({formData})
-			  }
+			}
 		} catch (err) {
 			console.log('error sending email:', err)
 		}
@@ -98,6 +125,8 @@ export default function ContactPage() {
 
     return (
         <div className="display-flex justify-content-center">
+			<div className='anime-modal border-style border-radius'>
+			</div>
             <form onSubmit={handleFormSubmit} className="padding border-style text-shadow">
                 <label>Name:</label>
                 <input 
