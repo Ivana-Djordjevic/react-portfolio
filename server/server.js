@@ -13,10 +13,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// if we're in production, serve client/build as static assets
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, '../client/dist')));
-}
 
 // nodemailer configuration
 const transporter = nodemailer.createTransport(smtpTransport({
@@ -51,6 +47,15 @@ app.post('/api/send-email', (req, res) => {
         }
     });
 });
+
+// if we're in production, serve client/build as static assets
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, '../client/dist')));
+
+    app.get('*', (req, res) => {
+      res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+    });
+} 
 
 // Start the server
 app.listen(PORT, () => {

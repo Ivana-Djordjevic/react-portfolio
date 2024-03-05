@@ -7,8 +7,11 @@ export default function ContactPage() {
 
 	const [formData, setFormData] = useState({
 		name: '',
+		nameError: true,
 		email: '',
-		message: ''
+		emailError: true,
+		message: '',
+		messageError:true,
 	})
 
     const handleInputChange = (e) => {
@@ -74,7 +77,6 @@ export default function ContactPage() {
         }
     };
 
-
 	function modal(message) {
 
 		const modalElement = document.querySelector('.anime-modal');
@@ -83,7 +85,6 @@ export default function ContactPage() {
 		const tl = anime.timeline({
 			easing: 'easeOutExpo',
 			duration: 1000,
-			
 		});
 		  
 		  // Add children
@@ -91,7 +92,6 @@ export default function ContactPage() {
 			.add({
 				targets: '.anime-modal',
 				translateY: 350,
-				// innerHTML: ` ${message}`
 			})
 			.add({
 				targets: '.anime-modal',
@@ -102,6 +102,10 @@ export default function ContactPage() {
 
     const handleFormSubmit = async (e) => {
         e.preventDefault() 
+
+		if(formData.emailError || formData.nameError || formData.messageError) {
+			return
+		}
 
 		try {
 			const response = await fetch('/api/send-email', {
@@ -160,7 +164,10 @@ export default function ContactPage() {
                         onBlur={handleMessageBlur} />
                 {formData.messageError && 
                     <div className="error">{formData.messageError}</div>}
-                <button type='submit'> Submit</button>
+                <button type='submit' 
+						disabled={formData.messageError || formData.emailError || formData.nameError}> 
+					Submit
+				</button>
             </form>
         </div>
     );
