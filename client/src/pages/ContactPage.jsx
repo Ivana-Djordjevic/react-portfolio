@@ -12,7 +12,7 @@ export default function ContactPage() {
 		emailError: true,
 		message: '',
 		messageError:true,
-	})
+	});
 
     const handleInputChange = (e) => {
 

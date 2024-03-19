@@ -14,10 +14,10 @@ export default function Header() {
                target="_blank" rel="noreferrer">
                 <FontAwesomeIcon className="icon" icon={faLinkedin} />
             </a>
-            <a href="https://www.instagram.com/runningaroundintheabyss?igsh=YzVkODRmOTdmMw%3D%3D&utm_source=qr"
+            {/* <a href="https://www.instagram.com/runningaroundintheabyss?igsh=YzVkODRmOTdmMw%3D%3D&utm_source=qr"
                target="_blank" rel="noreferrer">
                 <FontAwesomeIcon className="icon" icon={faInstagram} />
-            </a>
+            </a> */}
         </footer>
 
     );
