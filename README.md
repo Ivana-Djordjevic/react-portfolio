@@ -52,16 +52,16 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 screenshots:
 
-homepage:
+homepage:<br>
 <img width="918" alt="about-me-page" src="https://github.com/Ivana-Djordjevic/react-portfolio/assets/127266659/94e60861-0d59-4057-9fea-5fca6d2ee4ca">
+<br>
+portfolio page:<br>
+![Screenshot 2024-03-18 at 22 35 25](https://github.com/Ivana-Djordjevic/react-portfolio/assets/127266659/7f4b5ba5-1218-4dac-80e4-4c101fe45977)
 
-portfolio page:
-<img width="910" alt="portfolio-page" src="https://github.com/Ivana-Djordjevic/react-portfolio/assets/127266659/969d0856-01e1-4ed1-920a-de5d92291e31">
-
-contact page:
+contact page:<br>
 <img width="903" alt="contact-page" src="https://github.com/Ivana-Djordjevic/react-portfolio/assets/127266659/729a99db-a559-4e5c-babe-8f7aa3b6a5d2">
 
-resume page:
+resume page:<br>
 <img width="907" alt="resume-page" src="https://github.com/Ivana-Djordjevic/react-portfolio/assets/127266659/fc2ed286-6fc6-48a6-851c-607f6c40c15a">
 
 [deployed netlify link](https://main--cozy-empanada-da79f3.netlify.app/)
